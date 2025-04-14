@@ -1,0 +1,31 @@
+body {
+    font-size: 10 ;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+form{
+    text-align: left;
+    width: 300px;
+    padding: 5%;
+    margin: 80px auto;
+    border: 2px solid black;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px 10px 0;
+    font-size: 15px;
+    background-color: green;
+    color: black;
+    height: 40px;
+}
+
+input[type="reset"] {
+    font-size: 15px;
+    background-color: red;
+    color: white
+}
