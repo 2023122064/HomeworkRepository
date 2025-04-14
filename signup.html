@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Signup</title>
+        <link rel="stylesheet" type = "text/css" href="main.css">
+    </head>
+
+    <body>
+        <h1>Welcome to INTERNET-PROGRAMMING MOVIE SITE</h1>
+
+        <ul>
+            <a href = "login.html">로그인</a> | <a href="signup.html">회원가입</a>
+        </ul>
+
+        <form method = "GET">
+            <p>
+                <label>이름: <input name = "name" type="text" required></label>
+            </p>
+            <p>
+                <label>생일: <input name = "birth" type="date"></label> 
+            </p>
+            <p>
+                성별:
+                    <label><input name = "sex" type="radio" value="남성"> 남성</label>
+                    <label><input name = "sex" type="radio" value="여성"> 여성</label>
+            </p>
+            <p>
+                <label>학년: <input name = "year" type="number" step="1"></label>
+            </p>
+            <p>
+                <label>아이디: <input name = "id" type="text" autofocus></label>
+            </p>
+            <p>
+                <label>비밀번호: <input name = "password" type="password" autocomplete="current-password"></label>
+            </p>
+            <p>
+                <label>이메일: <input name = "email" type="email"></label>
+            </p>
+            <p>
+                <label>보안질문: <select name = "security">
+                    <option selected>질문을 선택하세요</option>
+                    <option>내 나이는?</option>
+                    <option>내 고등학교는?</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>답변: <input name = "answer" type="text" placeholder="비밀번호 작성 금지"></label>
+            </p>
+
+            <p>
+                <input type = "submit" value = "Signup">
+                <input type = "reset" value = "Cancel">
+            </p>
+
+            
+        </form>
+
+    </body>
+
+
+
+</html>
