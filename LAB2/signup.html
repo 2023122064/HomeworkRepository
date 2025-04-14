@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <h1>회원가입</h1>
+  <form action="login.html" method="get">
+    <!-- 1. 서로 다른 HTML5 input 5개 + attribute 포함 -->
+    <label>이름:</label>
+    <input type="text" name="name" placeholder="이름 입력" required><br>
+
+    <label>이메일:</label>
+    <input type="email" name="email" autocomplete="on"><br>
+
+    <label>생년월일:</label>
+    <input type="date" name="birth" autofocus><br>
+
+    <label>비밀번호:</label>
+    <input type="password" name="password"><br>
+
+    <label>나이:</label>
+    <input type="number" name="age" step="1"><br>
+
+    <!-- 2. radio 버튼 -->
+    <p>성별:</p>
+    <input type="radio" name="gender" value="male"> 남성
+    <input type="radio" name="gender" value="female"> 여성<br>
+
+    <!-- 3. select(dropdown) -->
+    <p>좋아하는 장르:</p>
+    <select name="genre">
+      <option value="action">액션</option>
+      <option value="comedy">코미디</option>
+      <option value="romance">로맨스</option>
+      <option value="thriller">스릴러</option>
+      <option value="sf">SF</option>
+    </select><br>
+
+    <!-- 4. login.html로 리다이렉션 -->
+    <input type="submit" value="회원가입">
+    <button type="button" onclick="location.href='login.html'">로그인 페이지로</button>
+  </form>
+</body>
+</html>
